@@ -37,9 +37,11 @@ const Header = () => {
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
-              <Cart />
+              <div className="flex flex-col gap-4 mb-5 items-center">
+                <Cart />
+                <Searchbar />
+              </div>
             </SheetHeader>
-            <Searchbar />
             <Menu />
           </SheetContent>
         </Sheet>
