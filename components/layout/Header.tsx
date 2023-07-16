@@ -15,10 +15,12 @@ import Menu from "./Menu";
 
 const Header = () => {
   return (
-    <div className="flex justify-between lg:justify-evenly items-center m-[64px] lg:my-[32px] lg:mx-[128px]">
-      <Link href={"/"}>
-        <Image className="w-[140px] shrink-0" src={siteLogo} alt="logo" />
-      </Link>
+    <div className="flex justify-between items-center m-[64px] lg:my-[32px] lg:mx-[128px]">
+      <div className="shrink-0">
+        <Link href={"/"}>
+          <Image className="w-[140px] shrink-0" src={siteLogo} alt="logo" />
+        </Link>
+      </div>
       <div className="hidden lg:block shrink-0">
         <Menu />
       </div>
